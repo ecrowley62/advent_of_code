@@ -43,4 +43,3 @@ print(sum([key for key in valid_game_results.keys()]))
 
 
 
-x = 0
