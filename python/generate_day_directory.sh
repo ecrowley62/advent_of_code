@@ -49,6 +49,6 @@ mkdir $DIR_NAME
 touch ./$DIR_NAME/input.txt
 touch ./$DIR_NAME/problem_statement.txt
 touch ./$DIR_NAME/solution_one_value.txt
-touch ./$DIR_NAME/solution_one.py
+cp ./template_solution.py ./$DIR_NAME/solution_one.py
 touch ./$DIR_NAME/solution_two_value.txt
-touch ./$DIR_NAME/solution_two.py
+cp ./template_solution.py ./$DIR_NAME/solution_two.py
