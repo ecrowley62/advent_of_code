@@ -1,12 +1,11 @@
+from collections.abc import Generator
+
 INPUT_FILE = "input.txt"
 
-def parse_input() -> None:
+def read_input_data() -> Generator[tuple[int, str], None, None]:
     with open(INPUT_FILE) as open_data_file:
-        pass
-
-
-
-
+        for line_num, raw_line in enumerate(open_data_file):
+            yield line_num, raw_line.replace('\n','')
 
 if __name__ == '__main__':
-    parse_input()
+    problem_data = [row for row in read_input_data()]
