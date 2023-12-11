@@ -9,3 +9,4 @@ def read_input_data() -> Generator[tuple[int, str], None, None]:
 
 if __name__ == '__main__':
     problem_data = [row for row in read_input_data()]
+    len(problem_data)
